@@ -14,7 +14,7 @@
             <h4>Calculadora Web</h4>
           </div>
           <div class="card-body">
-            <form action="index.php" method="POST">
+            <form>
               <div class="mb-3">
                 <label class="form-label">Número 1</label>
                 <input type="number" name="n1" class="form-control" required placeholder="0" />
@@ -37,7 +37,7 @@
                 <input type="number" name="n2" class="form-control" required placeholder="0" />
               </div>
               
-              <button type="submit" name="calcular" class="btn btn-primary w-100">Calcular</button>
+              <button name="calcular" class="btn btn-primary w-100">Calcular</button>
               <hr/>
               
               <div class="alert alert-secondary text-center mb-0">
