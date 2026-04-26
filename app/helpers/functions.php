@@ -6,6 +6,7 @@ include 'app.php';
     function sum($n1, $n2) {
         $result = $n1 + $n2;
         $sql = "INSERT INTO hist VALUES (:n1, :n2)";
+        return $result;
     }
 
     function sub($n1, $n2) {
