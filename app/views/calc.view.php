@@ -15,7 +15,7 @@ error_reporting(E_ALL);
 </head>
     <body class="bg-light">
       <div class="container d-flex justify-content-center">
-        <div class="card shadow" style="max-width: 400px; margin-top: 50px;">
+        <div class="card shadow" style="width: 350px; margin-top: 50px;">
           <div class="card-header bg-primary text-white text-center">
             <h4>Calculadora Web</h4>
           </div>
@@ -79,7 +79,7 @@ error_reporting(E_ALL);
               
               ?>
               <div class="alert alert-secondary text-center mb-0">
-                Resultado: <strong id="result"><?php echo $result ?? '0'; ?></strong>
+                Resultado: <span id="result"><?php echo $result ?? '0'; ?></span>
               </div>
               
             </form>
