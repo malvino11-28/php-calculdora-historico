@@ -1,10 +1,10 @@
 -- CREATE DATABASE hist IF DONT EXIST --
 
 CREATE TABLE calc(
-    n1 DECIMAL,
-    n2 DECIMAL,
-    operation VARCHAR(3),
-    result DECIMAL,
+    n1 DECIMAL NOT NULL,
+    n2 DECIMAL NOT NULL,
+    operation VARCHAR(3) NOT NULL,
+    result DECIMAL NOT NULL,
     data_criacao TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 )
 
