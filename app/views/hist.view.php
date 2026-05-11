@@ -11,7 +11,8 @@ if ($result->num_rows > 0) {
     echo "</li>";
   }
 } else 
-  echo "<li class='list-group-item'>Nenhum cálculo</li>";
+  echo "<li class='list-group-item'>Nenhum cálculo realizado</li>";
 echo "</ul>";
+echo "<button name="historico" class="btn btn-secondary w-100">Calculadora</button>";
 
 ?>

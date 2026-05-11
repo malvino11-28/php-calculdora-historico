@@ -84,6 +84,7 @@ error_reporting(E_ALL);
               
             </form>
           </div>
+          <button name="historico" class="btn btn-secondary w-100">Histórico</button>
         </div>
       </div>
       <script src="/app/helpers/functions.js"></script>
