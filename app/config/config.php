@@ -17,3 +17,6 @@ $result = pg_query($conn, $query);
 if ($result)
     die("erro ao puxar os dados: " . pg_last_error());
 ?>
+
+// while($row=pg_fetch_assoc($result))
+// $row['coluna'];
