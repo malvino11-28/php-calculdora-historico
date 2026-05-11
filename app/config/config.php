@@ -1,13 +1,19 @@
 <?php
-$servername = $_ENV["SERVERNAME"];
-$username = $_ENV["USERNAME"];
-$password = $_ENV["PASSWORD"];
-$dbname = $_ENV["DBNAME"];
+$host = $_ENV[""];
+$port = $_ENV[""];
+$dbname = $_ENV[""];
+$username = $_ENV[""];
+$password = $_ENV[""];
 
-$conn = new mysqli($servername, $username, $password, $dbname);
+$conn = pg_connect("host = $host port = $port dbname = $dbname username = $username password = $password");
 
-if ($conn->connect_error) 
-    die("Falha na conexão: $conn->connect_error");
+if (!$conn) 
+    die("erro na conexão: " . pg_last_error());
 
+$query = "SELECT * FROM calc";
 
+$result = pg_query($conn, $query);
+
+if ($result)
+    die("erro ao puxar os dados: " . pg_last_error());
 ?>
